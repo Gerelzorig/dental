@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +17,6 @@ use App\Http\Controllers\Frontend\AboutController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
+Route::get('/blog', [BlogController::class, 'index']);
+
 
